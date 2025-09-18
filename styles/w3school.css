@@ -81,12 +81,13 @@ header {
 }
 .nav_titles ul li{
     padding: 10px;
+    display: flex;
 }
 .nav_titles ul li:hover{
     background: #04AA6D;
 }
-.nav_titles ul{
-    display: flex;
+.nav_titles ul img{
+  width: 15px;
 }
 
 .search-form {
@@ -188,6 +189,287 @@ header {
     background-color: var(--color-primary);
     font-weight: bold;
 }
+
+/* Homehero Section */
+.homehero {
+  background: #232532;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  height: 88vh;
+}
+
+/* Text */
+.homehero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.homesubtitle {
+  font-size: 1.25rem;
+  margin: 15px 0 30px;
+  color: #ffe787;
+  font-weight: 600;
+}
+
+.homesearch-box {
+  display: inline-flex;
+  border-radius: 50px;
+  overflow: hidden;
+  max-width: 600px;
+  width: 80%;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.homesearch-box input {
+  border: none;
+  padding: 15px;
+  flex: 1;
+  font-size: 1rem;
+  outline: none;
+}
+
+.homesearch-box button {
+  background: #00b46e;
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.begin-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.3rem;
+}
+
+/* Wave Bottom */
+.wave {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* xampleflex */
+.xampleflex{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 20px;
+  gap: 70px;
+
+  background-color: #dff2e1;
+}
+.homexample{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  
+}
+.homexample-section {
+    font-family: Segoe UI, Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 420px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+}
+
+.homexample-section h2 {
+    font-size: 24px;
+    color: var(--color-text-dark);
+    margin-bottom: 15px;
+}
+
+.example-container {
+    background: var(--color-example-bg);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.homebtns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;      
+  gap: 12px;         
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.homebtns button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;   /* cleaner look */
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+  min-width: 160px;     /* consistent size */
+  text-align: center;
+}
+
+.homebtns button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Individual colors */
+.homebtn1 {
+   background-color: #04AA6D;
+   }
+.homebtn2 { 
+  background-color: #BBD71E;
+ }
+.homebtn3 {
+   background-color: #111;
+   }
+.homebtn4 { 
+  background-color: #FF6FA3;
+ }
+
+ /* home css section */
+.css-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  padding: 50px;
+  gap: 50px;
+  background-color: rgb(244, 242, 103);
+}
+
+/* Left Section */
+.css-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+.css-left h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.css-left p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+/* Buttons */
+.cssbtn {
+  display: block;
+  margin: 10px 0;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #04AA6D;
+  color: white;
+}
+.greener {
+  background-color: #04AA6D;
+  color: white;
+  width: 150px;
+}
+
+.black {
+  background-color: #282a35;
+  color: white;
+}
+
+.pink {
+  background-color: #f8b8c0;
+  color: black;
+}
+
+/* Right Section */
+.right {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(58, 58, 58); /* 👈 added shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 420px;
+}
+
+.right h2 {
+  margin-top: 0;
+}
+
+.code-box {
+  background: white;
+  border-left: 5px solid green;
+  padding: 15px;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===========================
    Main Layout
@@ -438,10 +720,10 @@ main {
     display: inline-block;
     background-color: var(--color-primary);
     border: none;
-    padding: 12px 24px;
+    padding: 12px 25px;
     color: var(--color-white);
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
     margin-top: 10px;
@@ -922,10 +1204,12 @@ footer {
   .right-sidebar {
     display: none;
   }
+  
 
   main {
     width: 100%;
-    padding: 15px;
+    padding: 20px;
+    overflow-x: hidden;
   }
 
   /* Offer cards stack */
@@ -940,7 +1224,7 @@ footer {
 
   /* Nav buttons stack */
   .nav-buttons {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
@@ -1105,5 +1389,71 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+  }
+   /* Hero Section */
+  .homehero {
+    padding: 60px 15px;
+    height: auto;
+  }
+
+  .homehero h1 {
+    font-size: 2rem;
+  }
+
+  .homesubtitle {
+    font-size: 1rem;
+  }
+
+  .homesearch-box {
+    width: 100%;
+  }
+  /* Wave Bottom */
+.wave {
+  position: absolute;
+  bottom: -55px;
+ 
+}
+
+  /* Example Section */
+  .xampleflex {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+
+  .homexample-section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Buttons layout */
+  .homebtns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .homebtns button {
+    width: 100%;
+  }
+
+  /* CSS Section */
+  .css-container {
+    flex-direction: column;
+    padding: 30px 15px;
+    gap: 25px;
+  }
+
+  .css-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .css-left p {
+    font-size: 1rem;
+  }
+
+  .right {
+    width: 100%;
+    max-width: 100%;
   }
 }
